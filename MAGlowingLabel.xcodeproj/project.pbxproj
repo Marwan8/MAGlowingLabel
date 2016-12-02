@@ -12,6 +12,7 @@
 		D6DA7C641DF1A7270096706E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D6DA7C621DF1A7270096706E /* Main.storyboard */; };
 		D6DA7C661DF1A7270096706E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D6DA7C651DF1A7270096706E /* Assets.xcassets */; };
 		D6DA7C691DF1A7270096706E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D6DA7C671DF1A7270096706E /* LaunchScreen.storyboard */; };
+		D6DA7C721DF1A76C0096706E /* MAGlowingLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6DA7C711DF1A76C0096706E /* MAGlowingLabel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		D6DA7C651DF1A7270096706E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D6DA7C681DF1A7270096706E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D6DA7C6A1DF1A7270096706E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D6DA7C711DF1A76C0096706E /* MAGlowingLabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MAGlowingLabel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -38,6 +40,7 @@
 		D6DA7C521DF1A7270096706E = {
 			isa = PBXGroup;
 			children = (
+				D6DA7C701DF1A7560096706E /* Classes */,
 				D6DA7C5D1DF1A7270096706E /* MAGlowingLabel */,
 				D6DA7C5C1DF1A7270096706E /* Products */,
 			);
@@ -62,6 +65,14 @@
 				D6DA7C6A1DF1A7270096706E /* Info.plist */,
 			);
 			path = MAGlowingLabel;
+			sourceTree = "<group>";
+		};
+		D6DA7C701DF1A7560096706E /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				D6DA7C711DF1A76C0096706E /* MAGlowingLabel.swift */,
+			);
+			path = Classes;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -135,6 +146,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D6DA7C721DF1A76C0096706E /* MAGlowingLabel.swift in Sources */,
 				D6DA7C611DF1A7270096706E /* ViewController.swift in Sources */,
 				D6DA7C5F1DF1A7270096706E /* AppDelegate.swift in Sources */,
 			);
