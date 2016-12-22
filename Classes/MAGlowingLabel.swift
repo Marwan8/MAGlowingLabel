@@ -45,6 +45,7 @@ class MAGlowingLabel: UILabel {
         animation.toValue = endingLocations
         animation.repeatCount = Float.infinity
         animation.duration = 1.5
+        animation.removedOnComplation = false
         glowMask.addAnimation(animation, forKey: "gradientAnimation")
     }
 }
