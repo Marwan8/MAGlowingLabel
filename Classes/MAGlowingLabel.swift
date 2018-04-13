@@ -26,7 +26,7 @@ class MAGlowingLabel: UILabel {
         
         let glowSize :CGFloat = 40 / labelWidth
         
-        let startingLocations :NSArray = [NSNumber.init(float:0.0), NSNumber.init(float:((Float)(glowSize / 2))),NSNumber.init(float:((Float)(glowSize)/1))]
+        let startingLocations :NSArray = [NSNumber.init(value: 0.0 as Float), NSNumber.init(value: ((Float)(glowSize / 2)) as Float),NSNumber.init(value: ((Float)(glowSize)/1) as Float)]
         
         let endingLocations = [(1.0 - glowSize), (1.0 - (glowSize / 2)), 1.0] as NSArray
         
@@ -35,17 +35,17 @@ class MAGlowingLabel: UILabel {
         glowMask.frame = self.bounds
         
         let gradient = UIColor.init(white: 0.5, alpha: labelTransparency)
-        glowMask.colors =  [gradient.CGColor,UIColor.whiteColor().CGColor,gradient.CGColor]
+        glowMask.colors =  [gradient.cgColor,UIColor.white.cgColor,gradient.cgColor]
         glowMask.locations = startingLocations as? [NSNumber]
-        glowMask.startPoint = CGPointMake(0 - (glowSize * 2), 1)
-        glowMask.endPoint = CGPointMake(1 + glowSize , 1)
+        glowMask.startPoint = CGPoint(x: 0 - (glowSize * 2), y: 1)
+        glowMask.endPoint = CGPoint(x: 1 + glowSize , y: 1)
         self.layer.mask = glowMask
         
         animation.fromValue = startingLocations
         animation.toValue = endingLocations
         animation.repeatCount = Float.infinity
         animation.duration = 1.5
-        animation.removedOnCompletion = false
-        glowMask.addAnimation(animation, forKey: "gradientAnimation")
+        animation.isRemovedOnCompletion = false
+        glowMask.add(animation, forKey: "gradientAnimation")
     }
 }
