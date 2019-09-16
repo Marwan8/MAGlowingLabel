@@ -17,7 +17,9 @@ class MAGlowingLabel: UILabel {
     
     required init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
-        self.addGlowingEffect()
+        DispatchQueue.main.async {
+            self.addGlowingEffect()
+        }
     }
     
     func addGlowingEffect()  {
